@@ -4,435 +4,428 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Sonnet's Portfolio</title>
     <link rel="stylesheet" href="style.css" /> 
     <link rel="stylesheet" href="mediaqueries.css" /> 
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo"> Sonnet Salice</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>    
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo"> Sonnet Salice </div>
-        <div class="hamburger-menu"> 
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+  <nav id="desktop-nav">
+      <div class="logo"> Sonnet Salice</div>
+      <div>
+          <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>    
+  </nav>
+  <nav id="hamburger-nav">
+      <div class="logo"> Sonnet Salice </div>
+      <div class="hamburger-menu"> 
+          <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="menu-links">
+              <ul>
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                  <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <section id = "profile"> 
+      <div class="section_pic-container">
+          <img src="./assets/sonnet-circle-profile-pic.png" />
+      </div>
+      <div class="section_text">
+          <p class="section_text_p1"> Hello, I'm</p>
+          <h1 class="title"> Sonnet Salice</h1> 
+          <p class="section_text_p2">BASc Computer Engineering @ University of Toronto</p>
+          <div class="btn-container">
+              <button class="btn btn-color-2" 
+              onclick="window.open('./assets/Sonnet_Salice_Resume.pdf')">Download CV</button>
+              <button class="btn btn-color-1" 
+              onclick="location.href='./#contact'">Reach me</button>
+          </div>
+          <div id="socials-container">
+              <img src="./assets/linkedin.png" alt="My Linkedin Profile"
+              class="icon" onclick="location.href='https://www.linkedin.com/in/sonnetsalice/'" />
+              <img src="./assets/github.png" alt="My Github Profile"
+              class="icon" onclick="location.href='https://github.com/theonlysonnet'" />
+          </div>
+      </div>
+  </section>
+  <section id = "about">
+    <div class = "section-heading-container">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+    </div>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Co-founder @ DayDream Education</p>
+              <p>Intern @ Repel Security Systems Ltd.</p>
+              <p>Program Director @ International Assoc. of Young Geographers</p>
             </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section id = "profile"> 
-        <div class="section_pic-container">
-            <img src="./assets/sonnet_salice_photo.png" />
-        </div>
-        <div class="section_text">
-            <p class="section_text_p1"> Hello, I'm</p>
-            <h1 class="title"> Sonnet Salice</h1> 
-            <p class="section_text_p2">BASc Computer Engineering @ University of Toronto</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assets/sonnet-salice-resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">Reach me</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My Linkedin Profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/sonnetsalice/'" />
-                <img src="./assets/github.png" alt="My Github Profile"
-                class="icon" onclick="location.href='https://github.com/theonlysonnet'" />
-            </div>
-        </div>
-    </section>
-    <section id = "about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <!-- <div class="section_pic-container">
-            <img
-              src="./assets/Michael_Schumacher_(Ferrari)_-_GP_d'Italia_1998 copy.jpg"
-              alt="Profile picture"
-              class="about-pic"
-            /> 
-          </div>-->
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>studying <br />and shit idk</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>Univeristy of Toronto<br/>BASc. Computer Engineering + PEY Co-op<br />Eric hamber Secondary</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
-              </p>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Univeristy of Toronto - BASc. Computer Engineering + PEY</p>
+              <p>Eric Hamber Secondary</p>
+              <p>Camas High school</p>  
             </div>
           </div>
+          <div class="text-container">
+            <p>
+              I'm a Computer Engineering student currently studying at the University of Toronto.
+              My interests lie mainly in AI/ML Technologies, specifically in the domain of hardware acceleration for it.
+              As a creative, I'm also interested in full-stack development which is a skillset I'm working on currently.
+            </p>  
+            <p><br/>  I decided to become a Computer Engineer quite young at around 11 when my dad first introduced me to coding and the very basics of computer hardware ages ago.
+              I found it fascinating that we went from mechanical machines designed to crack cryptography to somehow making machines that think with just electrical signals. 
+              I'm very excited to see what else we can do as a society and this time be a part of those advancements as well.
+            </p>
+          </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-    </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Experience and skills</h1>
-        <div class="experience-details-container">
-          <div class="experience-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title"> Programming Languages</h2>
-              <div class="article-container">
-                  <article>
-                    <div>
-                      <h3>C++</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article>
-                    <div>
-                      <h3>Java</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+  </section>
+  <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience and skills</h1>
+      <div class="experience-details-container">
+        <div class="experience-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Programming Languages</h2>
+            <div class="article-container">
                 <article>
                   <div>
-                    <h3>Python</h3>
+                    <h3>C++</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>Java</h3>
                     <p>Intermediate</p>
                   </div>
                 </article>
-                <article>
-                  <div>
-                      <h3>ARM/Nios II Assembly</h3>
-                      <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Backend Development</h2>
-              <div class="article-container">
-                <article>
-                  <div>
-                    <h3>PostgreSQL</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>REST Framework</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="experience-containers"> 
-            <div class="details-container">
-              <h2 class="experience-sub-title">AI/ML & Accelerators</h2>
-                <div class="article-container">
-                  <div>
-                  <article>
-                    <div>
-                      <h3>Pytorch</h3>
-                      <p>Experienced</p>
-                    </div>
-                  </article>
-                  <article class = "suck">
-                    <div>
-                      <h3>CUDA</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
-                </div>
+              <article>
                 <div>
-                  <article>
-                    <div>
-                      <h3>Verilog</h3>
-                      <p>Intermediate</p>
-                    </div>
-                  </article>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
                 </div>
+              </article>
+              <article>
+                <div>
+                    <h3>ARM/Nios II Assembly</h3>
+                    <p>Intermediate</p>
                 </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Web Development</h2>
-              <div class="article-container">
-                <article>
-                  <div>
-                    <h3>HTML/CSS</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article> 
-                  <div>
-                    <h3>React</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>Node.js</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-              </div>
+              </article>
             </div>
           </div>
-      </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
-      <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/carto-main-pic.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="project-sub-title project-title">Carto</h2>
-              <h3 class="project-sub-title-desc project-title">Neighbourhood Mapping GIS</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'">
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'">
-                  More info
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/2048-main-pic.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="project-sub-title project-title">2048</h2>
-              <h3 class="project-sub-title-desc project-title">in C/Nios II Assembly</h3>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  More Info
-                </button>
-              </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>REST Framework</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-        <div class="experience-details-container"></div>
-          <div class="about-containers">
-            <div class="details-container color-container">
+        <div class="experience-containers"> 
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI/ML & Accelerators</h2>
               <div class="article-container">
-                <img
-                  src="./assets/archival-main-pic.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
+                <div>
+                <article>
+                  <div>
+                    <h3>Pytorch</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article class = "suck">
+                  <div>
+                    <h3>CUDA</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
               </div>
-              <h2 class="project-sub-title project-title">Archival Space Redesign</h2>
-              <h3 class="project-sub-title-desc project-title">Redesigning of Archival Library at Centre for Industrial Relations and Human Resources at UofT</h3>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('./assets/Team144_Sonnet Salice_CDS.pdf')">
-                  Project PDF
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  More Info
-                </button>
+              <div>
+                <article>
+                  <div>
+                    <h3>Verilog</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
               </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/pong-main-pic.jpg"
-                  alt="Project 3"
-                  class="project-img"
-                />
               </div>
-              <h2 class="project-sub-title project-title">Pong</h2>
-              <h3 class="project-sub-title-desc project-title">The classic game written entirely in Verilog and designed to be run on a De1-SoC FPGA board with VGA output</h3>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <!--<button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>-->
-              </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article> 
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-        <h2 class = "coming_soon"> Coming soon! </h2>
-        <div class="experience-details-container"></div>
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <!--<img
-                  src="./assets/carto-main-pic.png"
-                  alt="Project 1"
-                  class="project-img"
-                />-->
-              </div>
-              <h2 class="project-sub-title project-title">CNN for Harvard Spectral Star Classification</h2>
-              <h3 class="project-sub-title-desc project-title">a Convolutional Neural Network to automate spectral classification of stars</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/theonlysonnet/Deep-Learning-for-Harvard-Spectral-Star-Classification'">
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'">
-                  More info
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <!--<img
-                  src="./assets/2048-main-pic.png"
-                  alt="Project 2"
-                  class="project-img"
-                />-->
-              </div>
-              <h2 class="project-sub-title project-title">Synesthesia.ai</h2>
-              <h3 class="project-sub-title-desc project-title">simulating synesthesia with Generative AI</h3>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/theonlysonnet/Synesthesia'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  More Info
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>  
+    </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-    <section id="contact">
-      <p class="section_text_p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:salicesonnet@gmail.com">salicesonnet@gmail.com</a></p>
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/carto-main-pic.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-sub-title project-title">Carto</h2>
+          <h3 class="project-sub-title-desc project-title">Neighbourhood Mapping GIS</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/theonlysonnet/Carto-Neighbourhood_Mapping_GIS_Software'">
+              Github
+            </button>
+            <!--<button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='carto.html'">
+              More info
+            </button>-->
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/sonnetsalice/">LinkedIn</a></p>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/2048-main-pic.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-sub-title project-title">2048</h2>
+          <h3 class="project-sub-title-desc project-title">in C/Nios II Assembly</h3>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/theonlysonnet/2048-Game-C-Assembly'"
+            >
+              Github
+            </button>
+            <!--<button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='2048.html'"
+            >
+              More Info
+            </button>-->
+          </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    </div>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/archival-main-pic.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-sub-title project-title">Archival Space Redesign</h2>
+          <h3 class="project-sub-title-desc project-title">Redesigning of Archival Library at Centre for Industrial Relations and Human Resources at UofT</h3>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Team144_Sonnet Salice_CDS.pdf')">
+              Project PDF
+            </button>
+            <!--<button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='archival-redesign.html'"
+            >
+              More Info
+            </button>-->
+          </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Sonnet Salice. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/pong-main-pic.jpg"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-sub-title project-title">Pong</h2>
+          <h3 class="project-sub-title-desc project-title">The classic game written entirely in Verilog and designed to be run on a De1-SoC FPGA board with VGA output</h3>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/theonlysonnet/Pong-Verilog'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class = "coming_soon"> Coming soon! </h2>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <!--<img
+              src="./assets/carto-main-pic.png"
+              alt="Project 1"
+              class="project-img"
+            />-->
+          </div>
+          <h2 class="project-sub-title project-title">CNN for Harvard Spectral Star Classification</h2>
+          <h3 class="project-sub-title-desc project-title">a Convolutional Neural Network to automate spectral classification of stars</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/theonlysonnet/Deep-Learning-for-Harvard-Spectral-Star-Classification'">
+              Github
+            </button>
+            <!--<button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='spectral.html'">
+              More info
+            </button>-->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <!--<img
+              src="./assets/2048-main-pic.png"
+              alt="Project 2"
+              class="project-img"
+            />-->
+          </div>
+          <h2 class="project-sub-title project-title">Synesthesia.ai</h2>
+          <h3 class="project-sub-title-desc project-title">simulating synesthesia with Generative AI</h3>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/theonlysonnet/Synesthesia'"
+            >
+              Github
+            </button>
+            <!--<button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              More Info
+            </button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>  
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:salicesonnet@gmail.com">salicesonnet@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/sonnetsalice/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sonnet Salice. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

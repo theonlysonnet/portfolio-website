@@ -173,6 +173,12 @@ section {
   display: flex;
 }
 
+.text-container {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -182,18 +188,15 @@ section {
   height: 80vh;
 }
 
+.section-heading-container {
+  margin-bottom: 1rem;
+}
+
 .section_pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
-}
-
-.section_pic-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
-  border-radius: 50%; /* Makes the image rounded */
 }
 
 .section_text {
@@ -217,6 +220,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 #socials-container {
@@ -290,7 +294,7 @@ section {
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .about-details-container {
